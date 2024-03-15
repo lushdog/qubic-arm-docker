@@ -4,4 +4,7 @@ services:
     image: qubic-arm
     privileged: true
     restart: unless-stopped
+    environment:
+      - ADDRESS=${ADDRESS:?please make sure to set your REWARD_ADDRESS environment variable in the .env file}
+      - T=${TH}
     

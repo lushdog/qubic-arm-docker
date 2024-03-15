@@ -1,9 +1,7 @@
 version: '3.7'
 services:
   qubic:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: qubic-arm
     privileged: true
     restart: unless-stopped
     
